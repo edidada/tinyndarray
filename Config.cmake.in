@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# 包含安装的目标
+include("${CMAKE_CURRENT_LIST_DIR}/tinyndarrayTargets.cmake")
+
+# 检查依赖
+check_required_components(tinyndarray)
